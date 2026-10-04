@@ -1,0 +1,28 @@
+{
+  "builds": {
+    "android": {
+      "configuration": "Release",
+      "architecture": "arm64-v8a",
+      "device": "Pixel 6 Pro API 33",
+      "os": "Android 13",
+      "result": "BUILD SUCCESSFUL",
+      "compilerWorkers": 2
+    },
+    "ios": {
+      "configuration": "Release",
+      "architecture": "arm64",
+      "device": "iPhone 17 Pro",
+      "os": "iOS 26.5",
+      "xcode": "27.0",
+      "sdk": "iOS Simulator 27.0",
+      "result": "BUILD SUCCEEDED",
+      "compilerWorkers": 2
+    }
+  },
+  "checks": {
+    "android": "PASS; native search/filter/details/back/reset/offline cold restart/reconnect",
+    "ios": "PASS; native search/filter/details/header back/reset with input updates settled; separate edge-swipe back position check",
+    "iosOfflineColdRestart": "not verified",
+    "iosNativeXCTestCases": 2
+  }
+}

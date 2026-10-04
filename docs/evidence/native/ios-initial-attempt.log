@@ -1,0 +1,643 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project /private/tmp/shopdiscover-native-checks/NativeChecks.xcodeproj -scheme NativeChecks -sdk iphonesimulator -destination "platform=iOS Simulator,id=47D84A87-2DE3-4A1B-B6F4-83507C32CC85" -derivedDataPath /private/tmp/shopdiscover-native-checks/DerivedData -resultBundlePath /private/tmp/shopdiscover-native-checks/NativeFlow.xcresult -parallel-testing-enabled NO -jobs 2 CODE_SIGNING_ALLOWED=NO test
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+    SDKROOT = iphonesimulator27.0
+
+Writing result bundle at path:
+	/private/tmp/shopdiscover-native-checks/NativeFlow.xcresult
+
+Build Preparation
+Build task concurrency set to 2 via user default IDEBuildOperationMaxNumberOfConcurrentCompileTasks
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (1 target)
+    Target 'NativeChecks' in project 'NativeChecks' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: d2e52820ee10cd99f44eae4a297405b1
+Build description path: /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/XCBuildData/d2e52820ee10cd99f44eae4a297405b1.xcbuilddata
+CreateBuildDirectory /tmp/shopdiscover-native-checks/DerivedData/ModuleCache.noindex
+    cd /tmp/shopdiscover-native-checks/NativeChecks.xcodeproj
+    builtin-create-build-directory /tmp/shopdiscover-native-checks/DerivedData/ModuleCache.noindex
+
+CreateBuildDirectory /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules
+    cd /tmp/shopdiscover-native-checks/NativeChecks.xcodeproj
+    builtin-create-build-directory /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules
+
+CreateBuildDirectory /tmp/shopdiscover-native-checks/DerivedData/CompilationCache.noindex
+    cd /tmp/shopdiscover-native-checks/NativeChecks.xcodeproj
+    builtin-create-build-directory /tmp/shopdiscover-native-checks/DerivedData/CompilationCache.noindex
+
+CreateBuildDirectory /tmp/shopdiscover-native-checks/DerivedData/Build/Products
+    cd /tmp/shopdiscover-native-checks/NativeChecks.xcodeproj
+    builtin-create-build-directory /tmp/shopdiscover-native-checks/DerivedData/Build/Products
+
+CreateBuildDirectory /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex
+    cd /tmp/shopdiscover-native-checks/NativeChecks.xcodeproj
+    builtin-create-build-directory /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex
+
+CreateBuildDirectory /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator
+    cd /tmp/shopdiscover-native-checks/NativeChecks.xcodeproj
+    builtin-create-build-directory /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator
+
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk /tmp/shopdiscover-native-checks/DerivedData/SDKStatCaches.noindex/iphonesimulator27.0-24A430-8dc58220667be655e1bcc261a7455254.sdkstatcache
+    cd /tmp/shopdiscover-native-checks/NativeChecks.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk -o /tmp/shopdiscover-native-checks/DerivedData/SDKStatCaches.noindex/iphonesimulator27.0-24A430-8dc58220667be655e1bcc261a7455254.sdkstatcache
+
+WriteAuxiliaryFile /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks-85c5178e25d70561ccd8291efe6af440-VFS-iphonesimulator/all-product-headers.yaml
+    cd /tmp/shopdiscover-native-checks/NativeChecks.xcodeproj
+    write-file /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks-85c5178e25d70561ccd8291efe6af440-VFS-iphonesimulator/all-product-headers.yaml
+
+CreateBuildDirectory /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+    cd /tmp/shopdiscover-native-checks/NativeChecks.xcodeproj
+    builtin-create-build-directory /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+CreateBuildDirectory /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/PrecompiledHeaders
+    cd /tmp/shopdiscover-native-checks/NativeChecks.xcodeproj
+    builtin-create-build-directory /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/PrecompiledHeaders
+
+CreateBuildDirectory /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/ExplicitPrecompiledModules
+    cd /tmp/shopdiscover-native-checks/NativeChecks.xcodeproj
+    builtin-create-build-directory /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+CreateBuildDirectory /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+    cd /tmp/shopdiscover-native-checks/NativeChecks.xcodeproj
+    builtin-create-build-directory /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+
+WriteAuxiliaryFile /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/empty-NativeChecks.plist (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    write-file /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/empty-NativeChecks.plist
+
+WriteAuxiliaryFile /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/ProductTypeInfoPlistAdditions.plist (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    write-file /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/ProductTypeInfoPlistAdditions.plist
+
+WriteAuxiliaryFile /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks_const_extract_protocols.json (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    write-file /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks_const_extract_protocols.json
+
+WriteAuxiliaryFile /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks.SwiftFileList (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    write-file /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks.SwiftFileList
+
+WriteAuxiliaryFile /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks.SwiftConstValuesFileList (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    write-file /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks.LinkFileList (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    write-file /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks.LinkFileList
+
+WriteAuxiliaryFile /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks-OutputFileMap.json (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    write-file /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks-OutputFileMap.json
+
+WriteAuxiliaryFile /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks.hmap (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    write-file /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks.hmap
+
+WriteAuxiliaryFile /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks.DependencyStaticMetadataFileList (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    write-file /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks.DependencyMetadataFileList (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    write-file /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks.DependencyMetadataFileList
+
+WriteAuxiliaryFile /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks-project-headers.hmap (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    write-file /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks-project-headers.hmap
+
+WriteAuxiliaryFile /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks-own-target-headers.hmap (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    write-file /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks-own-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks-generated-files.hmap (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    write-file /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks-generated-files.hmap
+
+WriteAuxiliaryFile /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks-all-target-headers.hmap (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    write-file /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks-all-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks-all-non-framework-target-headers.hmap (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    write-file /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks-all-non-framework-target-headers.hmap
+
+MkDir /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/PlugIns/NativeChecks.xctest (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    /bin/mkdir -p /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/PlugIns/NativeChecks.xctest
+
+ProcessInfoPlistFile /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/PlugIns/NativeChecks.xctest/Info.plist /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/empty-NativeChecks.plist (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    builtin-infoPlistUtility /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/empty-NativeChecks.plist -producttype com.apple.product-type.bundle.ui-testing -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/ProductTypeInfoPlistAdditions.plist -o /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/PlugIns/NativeChecks.xctest/Info.plist
+
+SwiftDriver NativeChecks normal arm64 com.apple.xcode.tools.swift.compiler (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name NativeChecks -Onone @/tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk -target arm64-apple-ios15.1-simulator -g -module-cache-path /tmp/shopdiscover-native-checks/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/shopdiscover-native-checks/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/shopdiscover-native-checks/DerivedData/SDKStatCaches.noindex/iphonesimulator27.0-24A430-8dc58220667be655e1bcc261a7455254.sdkstatcache -output-file-map /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/shopdiscover-native-checks/DerivedData/ModuleCache.noindex -sdk-module-cache-path /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/shopdiscover-native-checks/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks-generated-files.hmap -Xcc -I/tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks-own-target-headers.hmap -Xcc -I/tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks-project-headers.hmap -Xcc -I/tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/DerivedSources-normal/arm64 -Xcc -I/tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/DerivedSources/arm64 -Xcc -I/tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks-Swift.h -working-directory /tmp/shopdiscover-native-checks -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/SwiftShims-59GNTIS7V2SF5L5RL4845G8PD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/ptrauth-8WVZIILCO43V8NDHXPM2LBA55.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/_Builtin_stdbool-7P77TWS174EWLZWT32L9T1PZF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/_Builtin_float-7YKB9BSJPJFZJ7QW95CW3BMD3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/_Builtin_stddef-E8OFRU1VDD0U364QGHIDP5GHI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/_AvailabilityInternal-7N67WZKM660I1LTA043Z9G2G0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/DeveloperToolsSupport-Y1XP4CRJXY9ZUY8SDQGP3PHH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/ptrcheck-ZCGL6REYU182LPJ9K28A3Y8V.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/_Builtin_stdarg-41Z45VGJ5H2PAUVEH559LHQMV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/_SwiftConcurrencyShims-DI234TG35XOYO9H6QEN9CTS64.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/_DarwinFoundation1-9UZ0956Q74KZ6HHTWAGI8OWN6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/_DarwinFoundation2-5IRZ2AU9EGU4IASL1HZ13I7G9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/_Builtin_limits-P0CEK8J3L0HJ4MXAR3D58QQL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/string_h-EZYBPB93GLDINY2ZGA9JV8GKM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/_Builtin_stdint-BS63BVH8OZO0PLULJKW0JYKEQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/sys_types-5TFIYA5C86O6O32G2W4EW87FL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/_Builtin_tgmath-300M2P5S4QOOE71R5QKC0UPX0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/_Builtin_intrinsics-4NDJONOMRKVDT3AQKV82JVP2V.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/_Builtin_stdatomic-2NEJ9FMLQGI5TD2YTIDXIR6DR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/_DarwinFoundation3-5XM5BJLP5S6SBMD8LU9JQ4IW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/_Builtin_inttypes-2C5MC8MG1QZ6UWM1GH97FH0M2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/simd-5GVGFCZS9AQLMIN6LG7Q3KAUA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/Darwin-2SI8P819ZNWNYYVAFTGYXRNQM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/Spatial-68U86YBTG5WAHIO23GTXMEHYI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/MachO-10SKEY3BUY0M1PP816VGF4JVM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/ObjectiveC-6OW9RBNSE96ZQ0QAYKMYETAY6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/os_object-DIJH730NPG98TZCL2OK50V9RN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/os_workgroup-DUTMAC9YIVYX8CW56UW3488KE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/Dispatch-1N5VE6JCAP8A5049PQYZ0U969.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/CoreFoundation-SHUBAZX4YS5BT3LJZY6UBQ18.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/XPC-572Y6SFIG0S7TX1A3A1S7QSXK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/os-39IFIXVV9S90Y2BXYIKZ9LDI6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/CFNetwork-DKRKMUKJEW77Y60FF0OP4I6W8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/CoreGraphics-250TB9SMXWKZZPB5P0T7AANIS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/Security-5040QYAX2ZIA97JDOOJPUG4F0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/ImageIO-6L7T0ESOJFLTVR1T0WPS1MHG9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/CoreText-C6PM5O3BVU8VPZERVB67QR2CN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/Foundation-6UF10C4YBCU0NGMSUIPMFQBSH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/OSLog-CRFNZ1SUXXTCWNRBYH7B7BXSU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/FileProvider-ETH1564RD7XNPX6FB8ZGH5BFU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/_LocationEssentials-59MPCAS3TCKEG6F0LY0MK0RVT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/CoreTransferable-AKORRM338XWKSV1QIB0XEK81O.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/UniformTypeIdentifiers-5KXLHAOXXQAT74WRKLUBLEXGZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/CoreLocation-H9IY8Z2YBPMNU2LBF2CFV22Y.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/OpenGLES-61U9CAGMED35F4BQ3S4J1T3KX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/UserNotifications-D2UUOHIOPMWBK9KB5VPJOWOJG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/CoreMotion-55CXF58NWKCNMJZSD6N40B1G3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/Symbols-AT4511FTUO9S2GD2XV70M7MOK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/UIUtilities-7W06Q1VJXKRRHC3B8X5IK05YK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/Accessibility-8PICH2WW7VSYX9U0VAYC6TT6Y.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/DataDetection-3P21IVFKBJ2Y4MB9TGVBNUXMU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/IOSurface-4R0F5WCQTFR9Q692PCFMCEYAG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/Metal-OYMJAALE4F9HY7MGM92SMDAE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/CoreVideo-7CD60M3BYRLXZCMIMK2L6UO0B.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/QuartzCore-4IDHQ88LBPISZIQL4440Y22US.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/CoreImage-BDNTZVPLYQD4YPUTWBASVJF2V.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/SwiftUICore-109TH5CV18S5BHZC5FT0M7BNP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules/UIKit-6DMUSXV7XY3Q6V06SAF9ESEZ2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCUIAutomation-1FDMGQ2KDET2ECA1VN8VXT77S.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCTest-DXPDYI0GYQMXKLQWDTQ7J1CWS.pcm
+
+SwiftExplicitDependencyCompileModuleFromInterface arm64 /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCUIAutomation-30IUIJ1VXN17X.swiftmodule
+
+SwiftExplicitDependencyCompileModuleFromInterface arm64 /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCTest-3J4OZKCABOIE1.swiftmodule
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ NativeChecks (in target 'NativeChecks' from project 'NativeChecks')
+
+SwiftCompile normal arm64 (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+
+
+SwiftCompile normal arm64 Compiling\ NativeFlowTests.swift /tmp/shopdiscover-native-checks/NativeFlowTests.swift (in target 'NativeChecks' from project 'NativeChecks')
+
+SwiftCompile normal arm64 /tmp/shopdiscover-native-checks/NativeFlowTests.swift (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    builtin-SwiftPerFileCompile NativeFlowTests.swift
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for NativeChecks (in target 'NativeChecks' from project 'NativeChecks')
+
+SwiftDriver\ Compilation\ Requirements NativeChecks normal arm64 com.apple.xcode.tools.swift.compiler (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name NativeChecks -Onone @/tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk -target arm64-apple-ios15.1-simulator -g -module-cache-path /tmp/shopdiscover-native-checks/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/shopdiscover-native-checks/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/shopdiscover-native-checks/DerivedData/SDKStatCaches.noindex/iphonesimulator27.0-24A430-8dc58220667be655e1bcc261a7455254.sdkstatcache -output-file-map /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/shopdiscover-native-checks/DerivedData/ModuleCache.noindex -sdk-module-cache-path /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/shopdiscover-native-checks/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks-generated-files.hmap -Xcc -I/tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks-own-target-headers.hmap -Xcc -I/tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks-project-headers.hmap -Xcc -I/tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/DerivedSources-normal/arm64 -Xcc -I/tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/DerivedSources/arm64 -Xcc -I/tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks-Swift.h -working-directory /tmp/shopdiscover-native-checks -experimental-emit-module-separately -disable-cmo
+
+SwiftMergeGeneratedHeaders /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/DerivedSources/NativeChecks-Swift.h /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks-Swift.h (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    builtin-swiftHeaderTool -arch arm64 /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks-Swift.h -o /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/DerivedSources/NativeChecks-Swift.h
+
+Copy /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks.swiftmodule/arm64-apple-ios-simulator.swiftmodule /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks.swiftmodule (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks.swiftmodule /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks.swiftmodule/arm64-apple-ios-simulator.swiftdoc /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks.swiftdoc (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks.swiftdoc /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks.swiftmodule/arm64-apple-ios-simulator.abi.json /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks.abi.json (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks.abi.json /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks.swiftsourceinfo (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks.swiftsourceinfo /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftDriverJobDiscovery normal arm64 Compiling NativeFlowTests.swift (in target 'NativeChecks' from project 'NativeChecks')
+
+SwiftDriver\ Compilation NativeChecks normal arm64 com.apple.xcode.tools.swift.compiler (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name NativeChecks -Onone @/tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk -target arm64-apple-ios15.1-simulator -g -module-cache-path /tmp/shopdiscover-native-checks/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/shopdiscover-native-checks/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/shopdiscover-native-checks/DerivedData/SDKStatCaches.noindex/iphonesimulator27.0-24A430-8dc58220667be655e1bcc261a7455254.sdkstatcache -output-file-map /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/shopdiscover-native-checks/DerivedData/ModuleCache.noindex -sdk-module-cache-path /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/shopdiscover-native-checks/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks-generated-files.hmap -Xcc -I/tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks-own-target-headers.hmap -Xcc -I/tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks-project-headers.hmap -Xcc -I/tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/DerivedSources-normal/arm64 -Xcc -I/tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/DerivedSources/arm64 -Xcc -I/tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks-Swift.h -working-directory /tmp/shopdiscover-native-checks -experimental-emit-module-separately -disable-cmo
+
+Ld /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/PlugIns/NativeChecks.xctest/NativeChecks normal (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios15.1-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk/Developer/Library/Frameworks -filelist /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks.swiftmodule -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -framework Foundation -o /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/PlugIns/NativeChecks.xctest/NativeChecks
+/tmp/shopdiscover-native-checks/NativeChecks.xcodeproj: NativeChecks: ld: warning: building for iOS-simulator-15.1, but linking with dylib '@rpath/XCTest.framework/XCTest' which was built for newer version 17.0
+/tmp/shopdiscover-native-checks/NativeChecks.xcodeproj: NativeChecks: ld: warning: building for iOS-simulator-15.1, but linking with dylib '@rpath/libXCTestSwiftSupport.dylib' which was built for newer version 17.0
+/tmp/shopdiscover-native-checks/NativeChecks.xcodeproj: NativeChecks: ld: warning: building for iOS-simulator-15.1, but linking with dylib '@rpath/XCUIAutomation.framework/XCUIAutomation' which was built for newer version 17.0
+
+CopySwiftLibs /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/PlugIns/NativeChecks.xctest (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/PlugIns/NativeChecks.xctest/NativeChecks --scan-folder /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/PlugIns/NativeChecks.xctest/Frameworks --scan-folder /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/PlugIns/NativeChecks.xctest/PlugIns --scan-folder /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/PlugIns/NativeChecks.xctest/SystemExtensions --scan-folder /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/PlugIns/NativeChecks.xctest/Extensions --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/PlugIns/NativeChecks.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name NativeChecks --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk --xcode-version 27A266a --platform-family iOS --deployment-target 15.1 --bundle-identifier local.shopdiscover.NativeChecks --output /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/PlugIns/NativeChecks.xctest --target-triple arm64-apple-ios15.1-simulator --binary-file /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/PlugIns/NativeChecks.xctest/NativeChecks --dependency-file /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks_dependency_info.dat --stringsdata-file /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks.SwiftFileList --metadata-file-list /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks.DependencyMetadataFileList --static-metadata-file-list /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/Objects-normal/arm64/NativeChecks.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-10-04 08:08:30.330 appintentsmetadataprocessor[18569:115061] Starting appintentsmetadataprocessor export
+2026-10-04 08:08:30.339 appintentsmetadataprocessor[18569:115061] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+AppIntentsSSUTraining (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsnltrainingprocessor --infoplist-path /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/PlugIns/NativeChecks.xctest/Info.plist --temp-dir-path /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/ssu --bundle-id local.shopdiscover.NativeChecks --product-path /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/PlugIns/NativeChecks.xctest --extracted-metadata-path /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/PlugIns/NativeChecks.xctest/Metadata.appintents --metadata-file-list /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/NativeChecks.build/Debug-iphonesimulator/NativeChecks.build/NativeChecks.DependencyMetadataFileList --source-file /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/PlugIns/NativeChecks.xctest/Info.plist --archive-ssu-assets
+2026-10-04 08:08:30.380 appintentsnltrainingprocessor[18570:115070] Parsing options for appintentsnltrainingprocessor
+2026-10-04 08:08:30.381 appintentsnltrainingprocessor[18570:115070] Starting AppIntents SSU YAML Generation
+2026-10-04 08:08:30.382 appintentsnltrainingprocessor[18570:115070] No AppShortcuts found - Skipping.
+
+MkDir /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    /bin/mkdir -p /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app
+
+CopyPlistFile /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/Info.plist /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/Info.plist (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    builtin-copyPlist --validate --convert xml1 --macro-expansion WRAPPEDPRODUCTNAME NativeChecks-Runner --macro-expansion WRAPPEDPRODUCTBUNDLEIDENTIFIER local.shopdiscover.NativeChecks.xctrunner --macro-expansion TESTPRODUCTNAME NativeChecks --macro-expansion TESTPRODUCTBUNDLEIDENTIFIER local.shopdiscover.NativeChecks --copy-value UIDeviceFamily /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/PlugIns/NativeChecks.xctest/Info.plist --outdir /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app -- /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/Info.plist
+
+CopyAndPreserveArchs /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/NativeChecks-Runner (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/XCTRunner -output /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/NativeChecks-Runner -extract arm64
+
+Copy /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/PkgInfo /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/PkgInfo (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/PkgInfo /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app
+
+RegisterExecutionPolicyException /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/PlugIns/NativeChecks.xctest (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    builtin-RegisterExecutionPolicyException /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/PlugIns/NativeChecks.xctest
+
+Touch /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/PlugIns/NativeChecks.xctest (in target 'NativeChecks' from project 'NativeChecks')
+    cd /tmp/shopdiscover-native-checks
+    /usr/bin/touch -c /tmp/shopdiscover-native-checks/DerivedData/Build/Products/Debug-iphonesimulator/NativeChecks-Runner.app/PlugIns/NativeChecks.xctest
+
+PruneExplicitPrecompiledModules /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /tmp/shopdiscover-native-checks/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /tmp/shopdiscover-native-checks/DerivedData/SDKExplicitPrecompiledModules
+
+2026-10-04 08:08:59.910975+0600 NativeChecks-Runner[18630:115905] [Default] Running tests...
+objc[18630]: Class UIAccessibilityLoaderWebShared is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x1092c8310) and /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x107b08398). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'All tests' started at 2026-10-04 08:09:13.874.
+Test Suite 'NativeChecks.xctest' started at 2026-10-04 08:09:13.881.
+Test Suite 'NativeFlowTests' started at 2026-10-04 08:09:13.881.
+Test Case '-[NativeChecks.NativeFlowTests testSearchFiltersDetailsAndReturn]' started.
+    t =     0.00s Start Test at 2026-10-04 08:09:13.882
+    t =     1.04s Set Up
+    t =     1.04s Open org.reactjs.native.example.ShopDiscover
+    t =     1.04s     Launch org.reactjs.native.example.ShopDiscover
+    t =     2.68s         Setting up automation session
+    t =     6.99s         Wait for org.reactjs.native.example.ShopDiscover to idle
+    t =     9.22s Waiting 30.0s for "Search products" TextField to exist
+    t =    10.26s     Checking `Expect predicate `existsNoRetry == 1` for object "Search products" TextField`
+    t =    10.43s         Checking existence of `"Search products" TextField`
+    t =    13.38s         Capturing element debug description
+    t =    14.31s     Checking `Expect predicate `existsNoRetry == 1` for object "Search products" TextField`
+    t =    14.33s         Checking existence of `"Search products" TextField`
+    t =    14.41s Tap "Search products" TextField
+    t =    14.41s     Wait for org.reactjs.native.example.ShopDiscover to idle
+    t =    14.41s     Find the "Search products" TextField
+    t =    14.43s     Check for interrupting elements affecting "Search products" TextField
+    t =    14.72s     Synthesize event
+    t =    15.71s     Wait for org.reactjs.native.example.ShopDiscover to idle
+    t =    15.76s Type 'phone
+' into "Search products" TextField
+    t =    15.76s     Wait for org.reactjs.native.example.ShopDiscover to idle
+    t =    15.77s     Find the "Search products" TextField
+    t =    15.80s     Check for interrupting elements affecting "Search products" TextField
+    t =    15.83s     Synthesize event
+    t =    15.83s         Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    15.85s         Requesting snapshot of accessibility hierarchy for app with pid 18751
+    t =    15.90s         Find: Descendants matching type TextField
+    t =    15.90s         Find: Elements matching predicate '"Search products" IN identifiers'
+    t =    15.97s         Requesting snapshot of accessibility hierarchy for app with pid 18751
+    t =    16.00s         Find: Descendants matching type TextField
+    t =    16.00s         Find: Elements matching predicate '"Search products" IN identifiers'
+    t =    16.00s         Requesting snapshot of accessibility hierarchy for app with pid 18751
+    t =    16.03s         Find: Descendants matching type TextField
+    t =    16.04s         Requesting snapshot of accessibility hierarchy for app with pid 18751
+    t =    16.07s         Requesting snapshot of accessibility hierarchy for app with pid 18751
+    t =    16.10s         Find: Descendants matching type TextField
+    t =    16.10s         Find: Elements matching predicate '"Search products" IN identifiers'
+    t =    16.16s         Requesting snapshot of accessibility hierarchy for app with pid 18751
+    t =    16.19s         Find: Descendants matching type TextField
+    t =    16.19s         Find: Elements matching predicate '"Search products" IN identifiers'
+    t =    16.19s         Requesting snapshot of accessibility hierarchy for app with pid 18751
+    t =    16.22s         Find: Descendants matching type TextField
+    t =    16.22s         Requesting snapshot of accessibility hierarchy for app with pid 18751
+    t =    16.27s         Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: TextField, {{17.0, 149.7}, {243.3, 42.0}}, label: 'Search products', placeholderValue: 'Search products'
+Element debug description:
+Attributes: TextField, 0x115673340, {{17.0, 149.7}, {243.3, 42.0}}, label: 'Search products', placeholderValue: 'Search products'
+Element subtree:
+ →TextField, 0x115673340, {{17.0, 149.7}, {243.3, 42.0}}, label: 'Search products', placeholderValue: 'Search products'
+Path to element:
+ →Application, 0x115671f40, pid: 18751, label: 'ShopDiscover'
+  ↳Window (Main), 0x115670b40, {{0.0, 0.0}, {402.0, 874.0}}
+   ↳Other, 0x115670c80, {{0.0, 0.0}, {402.0, 874.0}}
+    ↳Other, 0x115670dc0, {{0.0, 0.0}, {402.0, 874.0}}
+     ↳Other, 0x115670f00, {{0.0, 0.0}, {402.0, 874.0}}
+      ↳Other, 0x115671040, {{0.0, 0.0}, {402.0, 874.0}}
+       ↳Other, 0x115671180, {{0.0, 0.0}, {402.0, 874.0}}
+        ↳Other, 0x1156712c0, {{0.0, 0.0}, {402.0, 874.0}}
+         ↳Other, 0x115671400, {{0.0, 0.0}, {402.0, 874.0}}
+          ↳Other, 0x115671540, {{0.0, 0.0}, {402.0, 874.0}}
+           ↳Other, 0x115671680, {{0.0, 0.0}, {402.0, 874.0}}
+            ↳Other, 0x1156717c0, {{0.0, 0.0}, {402.0, 874.0}}
+             ↳Other, 0x115671900, {{0.0, 0.0}, {402.0, 874.0}}
+              ↳Other, 0x115671a40, {{0.0, 0.0}, {402.0, 874.0}}
+               ↳Other, 0x115671b80, {{0.0, 0.0}, {402.0, 874.0}}
+                ↳Other, 0x115673200, {{16.0, 148.7}, {245.3, 44.0}}
+                 ↳TextField, 0x115673340, {{17.0, 149.7}, {243.3, 42.0}}, label: 'Search products', placeholderValue: 'Search products'
+Query chain:
+ →Find: Application 'org.reactjs.native.example.ShopDiscover'
+  Output: {
+    Application, 0x11589bc00, pid: 18751, label: 'ShopDiscover'
+  }
+  ↪︎Find: Descendants matching type TextField
+    Output: {
+      TextField, 0x115876940, {{17.0, 149.7}, {243.3, 42.0}}, label: 'Search products', placeholderValue: 'Search products'
+    }
+    ↪︎Find: Elements matching predicate '"Search products" IN identifiers'
+      Output: {
+        TextField, 0x115672bc0, {{17.0, 149.7}, {243.3, 42.0}}, label: 'Search products', placeholderValue: 'Search products'
+      }
+
+    t =    16.28s     Wait for org.reactjs.native.example.ShopDiscover to idle
+    t =    17.35s     Retrying `Type 'phone
+' into "Search products" TextField` (attempt #2)
+    t =    17.35s         Wait for org.reactjs.native.example.ShopDiscover to idle
+    t =    17.36s         Find the "Search products" TextField
+    t =    17.42s         Check for interrupting elements affecting "Search products" TextField
+    t =    17.47s         Synthesize event
+    t =    17.47s             Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    17.49s             Requesting snapshot of accessibility hierarchy for app with pid 18751
+    t =    17.53s             Find: Descendants matching type TextField
+    t =    17.53s             Find: Elements matching predicate '"Search products" IN identifiers'
+    t =    17.61s             Requesting snapshot of accessibility hierarchy for app with pid 18751
+    t =    17.63s             Find: Descendants matching type TextField
+    t =    17.64s             Find: Elements matching predicate '"Search products" IN identifiers'
+    t =    17.64s             Requesting snapshot of accessibility hierarchy for app with pid 18751
+    t =    17.67s             Find: Descendants matching type TextField
+    t =    17.67s             Requesting snapshot of accessibility hierarchy for app with pid 18751
+    t =    17.71s             Requesting snapshot of accessibility hierarchy for app with pid 18751
+    t =    17.74s             Find: Descendants matching type TextField
+    t =    17.74s             Find: Elements matching predicate '"Search products" IN identifiers'
+    t =    17.84s             Requesting snapshot of accessibility hierarchy for app with pid 18751
+    t =    17.87s             Find: Descendants matching type TextField
+    t =    17.87s             Find: Elements matching predicate '"Search products" IN identifiers'
+    t =    17.88s             Requesting snapshot of accessibility hierarchy for app with pid 18751
+    t =    17.91s             Find: Descendants matching type TextField
+    t =    17.91s             Requesting snapshot of accessibility hierarchy for app with pid 18751
+    t =    17.96s             Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: TextField, {{17.0, 149.7}, {243.3, 42.0}}, label: 'Search products', placeholderValue: 'Search products'
+Element debug description:
+Attributes: TextField, 0x115861040, {{17.0, 149.7}, {243.3, 42.0}}, label: 'Search products', placeholderValue: 'Search products'
+Element subtree:
+ →TextField, 0x115861040, {{17.0, 149.7}, {243.3, 42.0}}, label: 'Search products', placeholderValue: 'Search products'
+Path to element:
+ →Application, 0x1158afd40, pid: 18751, label: 'ShopDiscover'
+  ↳Window (Main), 0x1158afe80, {{0.0, 0.0}, {402.0, 874.0}}
+   ↳Other, 0x115862580, {{0.0, 0.0}, {402.0, 874.0}}
+    ↳Other, 0x1158626c0, {{0.0, 0.0}, {402.0, 874.0}}
+     ↳Other, 0x115862300, {{0.0, 0.0}, {402.0, 874.0}}
+      ↳Other, 0x115862440, {{0.0, 0.0}, {402.0, 874.0}}
+       ↳Other, 0x115862080, {{0.0, 0.0}, {402.0, 874.0}}
+        ↳Other, 0x1158621c0, {{0.0, 0.0}, {402.0, 874.0}}
+         ↳Other, 0x115861e00, {{0.0, 0.0}, {402.0, 874.0}}
+          ↳Other, 0x115861f40, {{0.0, 0.0}, {402.0, 874.0}}
+           ↳Other, 0x115861b80, {{0.0, 0.0}, {402.0, 874.0}}
+            ↳Other, 0x115861cc0, {{0.0, 0.0}, {402.0, 874.0}}
+             ↳Other, 0x115861a40, {{0.0, 0.0}, {402.0, 874.0}}
+              ↳Other, 0x115861900, {{0.0, 0.0}, {402.0, 874.0}}
+               ↳Other, 0x1158617c0, {{0.0, 0.0}, {402.0, 874.0}}
+                ↳Other, 0x115861180, {{16.0, 148.7}, {245.3, 44.0}}
+                 ↳TextField, 0x115861040, {{17.0, 149.7}, {243.3, 42.0}}, label: 'Search products', placeholderValue: 'Search products'
+Query chain:
+ →Find: Application 'org.reactjs.native.example.ShopDiscover'
+  Output: {
+    Application, 0x11589be80, pid: 18751, label: 'ShopDiscover'
+  }
+  ↪︎Find: Descendants matching type TextField
+    Output: {
+      TextField, 0x115877840, {{17.0, 149.7}, {243.3, 42.0}}, label: 'Search products', placeholderValue: 'Search products'
+    }
+    ↪︎Find: Elements matching predicate '"Search products" IN identifiers'
+      Output: {
+        TextField, 0x1158af700, {{17.0, 149.7}, {243.3, 42.0}}, label: 'Search products', placeholderValue: 'Search products'
+      }
+
+    t =    17.96s         Wait for org.reactjs.native.example.ShopDiscover to idle
+    t =    19.18s     Retrying `Type 'phone
+' into "Search products" TextField` (attempt #3)
+    t =    19.18s         Wait for org.reactjs.native.example.ShopDiscover to idle
+    t =    19.21s         Find the "Search products" TextField
+    t =    20.38s         Check for interrupting elements affecting "Search products" TextField
+    t =    21.80s         Synthesize event
+    t =    21.80s             Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    21.87s             Requesting snapshot of accessibility hierarchy for app with pid 18751
+    t =    21.92s             Find: Descendants matching type TextField
+    t =    21.92s             Find: Elements matching predicate '"Search products" IN identifiers'
+    t =    21.96s             Requesting snapshot of accessibility hierarchy for app with pid 18751
+    t =    21.98s             Find: Descendants matching type TextField
+    t =    21.99s             Find: Elements matching predicate '"Search products" IN identifiers'
+    t =    21.99s             Requesting snapshot of accessibility hierarchy for app with pid 18751
+    t =    22.01s             Find: Descendants matching type TextField
+    t =    22.01s             Requesting snapshot of accessibility hierarchy for app with pid 18751
+    t =    22.05s             Requesting snapshot of accessibility hierarchy for app with pid 18751
+    t =    22.08s             Find: Descendants matching type TextField
+    t =    22.08s             Find: Elements matching predicate '"Search products" IN identifiers'
+    t =    22.26s             Requesting snapshot of accessibility hierarchy for app with pid 18751
+    t =    22.35s             Find: Descendants matching type TextField
+    t =    22.35s             Find: Elements matching predicate '"Search products" IN identifiers'
+    t =    22.35s             Requesting snapshot of accessibility hierarchy for app with pid 18751
+    t =    22.38s             Find: Descendants matching type TextField
+    t =    22.38s             Requesting snapshot of accessibility hierarchy for app with pid 18751
+    t =    22.42s             Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: TextField, {{17.0, 149.7}, {243.3, 42.0}}, label: 'Search products', placeholderValue: 'Search products'
+Element debug description:
+Attributes: TextField, 0x1158bf0c0, {{17.0, 149.7}, {243.3, 42.0}}, label: 'Search products', placeholderValue: 'Search products'
+Element subtree:
+ →TextField, 0x1158bf0c0, {{17.0, 149.7}, {243.3, 42.0}}, label: 'Search products', placeholderValue: 'Search products'
+Path to element:
+ →Application, 0x1158af700, pid: 18751, label: 'ShopDiscover'
+  ↳Window (Main), 0x1158af340, {{0.0, 0.0}, {402.0, 874.0}}
+   ↳Other, 0x1158af480, {{0.0, 0.0}, {402.0, 874.0}}
+    ↳Other, 0x1158af0c0, {{0.0, 0.0}, {402.0, 874.0}}
+     ↳Other, 0x1158af200, {{0.0, 0.0}, {402.0, 874.0}}
+      ↳Other, 0x104e5bac0, {{0.0, 0.0}, {402.0, 874.0}}
+       ↳Other, 0x104e5bc00, {{0.0, 0.0}, {402.0, 874.0}}
+        ↳Other, 0x104e5b340, {{0.0, 0.0}, {402.0, 874.0}}
+         ↳Other, 0x104e5b480, {{0.0, 0.0}, {402.0, 874.0}}
+          ↳Other, 0x104e5b200, {{0.0, 0.0}, {402.0, 874.0}}
+           ↳Other, 0x104e5b5c0, {{0.0, 0.0}, {402.0, 874.0}}
+            ↳Other, 0x104e5bd40, {{0.0, 0.0}, {402.0, 874.0}}
+             ↳Other, 0x104e5be80, {{0.0, 0.0}, {402.0, 874.0}}
+              ↳Other, 0x1158be940, {{0.0, 0.0}, {402.0, 874.0}}
+               ↳Other, 0x1158be800, {{0.0, 0.0}, {402.0, 874.0}}
+                ↳Other, 0x1158bef80, {{16.0, 148.7}, {245.3, 44.0}}
+                 ↳TextField, 0x1158bf0c0, {{17.0, 149.7}, {243.3, 42.0}}, label: 'Search products', placeholderValue: 'Search products'
+Query chain:
+ →Find: Application 'org.reactjs.native.example.ShopDiscover'
+  Output: {
+    Application, 0x11589be80, pid: 18751, label: 'ShopDiscover'
+  }
+  ↪︎Find: Descendants matching type TextField
+    Output: {
+      TextField, 0x104e5b980, {{17.0, 149.7}, {243.3, 42.0}}, label: 'Search products', placeholderValue: 'Search products'
+    }
+    ↪︎Find: Elements matching predicate '"Search products" IN identifiers'
+      Output: {
+        TextField, 0x115673200, {{17.0, 149.7}, {243.3, 42.0}}, label: 'Search products', placeholderValue: 'Search products'
+      }
+
+    t =    22.42s         Wait for org.reactjs.native.example.ShopDiscover to idle
+    t =    22.42s     Requesting snapshot of accessibility hierarchy for app with pid 18751
+/tmp/shopdiscover-native-checks/NativeFlowTests.swift:19: error: -[NativeChecks.NativeFlowTests testSearchFiltersDetailsAndReturn] : Failed to synthesize event: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: TextField, {{17.0, 149.7}, {243.3, 42.0}}, label: 'Search products', placeholderValue: 'Search products'
+Element debug description:
+Attributes: TextField, 0x1158bf0c0, {{17.0, 149.7}, {243.3, 42.0}}, label: 'Search products', placeholderValue: 'Search products'
+Element subtree:
+ →TextField, 0x1158bf0c0, {{17.0, 149.7}, {243.3, 42.0}}, label: 'Search products', placeholderValue: 'Search products'
+Path to element:
+ →Application, 0x1158af700, pid: 18751, label: 'ShopDiscover'
+  ↳Window (Main), 0x1158af340, {{0.0, 0.0}, {402.0, 874.0}}
+   ↳Other, 0x1158af480, {{0.0, 0.0}, {402.0, 874.0}}
+    ↳Other, 0x1158af0c0, {{0.0, 0.0}, {402.0, 874.0}}
+     ↳Other, 0x1158af200, {{0.0, 0.0}, {402.0, 874.0}}
+      ↳Other, 0x104e5bac0, {{0.0, 0.0}, {402.0, 874.0}}
+       ↳Other, 0x104e5bc00, {{0.0, 0.0}, {402.0, 874.0}}
+        ↳Other, 0x104e5b340, {{0.0, 0.0}, {402.0, 874.0}}
+         ↳Other, 0x104e5b480, {{0.0, 0.0}, {402.0, 874.0}}
+          ↳Other, 0x104e5b200, {{0.0, 0.0}, {402.0, 874.0}}
+           ↳Other, 0x104e5b5c0, {{0.0, 0.0}, {402.0, 874.0}}
+            ↳Other, 0x104e5bd40, {{0.0, 0.0}, {402.0, 874.0}}
+             ↳Other, 0x104e5be80, {{0.0, 0.0}, {402.0, 874.0}}
+              ↳Other, 0x1158be940, {{0.0, 0.0}, {402.0, 874.0}}
+               ↳Other, 0x1158be800, {{0.0, 0.0}, {402.0, 874.0}}
+                ↳Other, 0x1158bef80, {{16.0, 148.7}, {245.3, 44.0}}
+                 ↳TextField, 0x1158bf0c0, {{17.0, 149.7}, {243.3, 42.0}}, label: 'Search products', placeholderValue: 'Search products'
+Query chain:
+ →Find: Application 'org.reactjs.native.example.ShopDiscover'
+  Output: {
+    Application, 0x11589be80, pid: 18751, label: 'ShopDiscover'
+  }
+  ↪︎Find: Descendants matching type TextField
+    Output: {
+      TextField, 0x104e5b980, {{17.0, 149.7}, {243.3, 42.0}}, label: 'Search products', placeholderValue: 'Search products'
+    }
+    ↪︎Find: Elements matching predicate '"Search products" IN identifiers'
+      Output: {
+        TextField, 0x115673200, {{17.0, 149.7}, {243.3, 42.0}}, label: 'Search products', placeholderValue: 'Search products'
+      }
+
+    t =    24.87s Tear Down
+Test Case '-[NativeChecks.NativeFlowTests testSearchFiltersDetailsAndReturn]' failed (26.101 seconds).
+Test Suite 'NativeFlowTests' failed at 2026-10-04 08:09:39.994.
+	 Executed 1 test, with 1 failure (0 unexpected) in 26.101 (26.113) seconds
+Test Suite 'NativeChecks.xctest' failed at 2026-10-04 08:09:39.995.
+	 Executed 1 test, with 1 failure (0 unexpected) in 26.101 (26.114) seconds
+Test Suite 'All tests' failed at 2026-10-04 08:09:39.995.
+	 Executed 1 test, with 1 failure (0 unexpected) in 26.101 (26.121) seconds

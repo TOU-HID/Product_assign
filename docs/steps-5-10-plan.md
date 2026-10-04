@@ -1,5 +1,7 @@
 # Steps 5–10 — বাকি কাজের সহজ পরিকল্পনা
 
+**Current progress:** see [session-status.md](./session-status.md). Search, stock/price filters, details/navigation and their automated tests are already implemented in the working tree. The fresh [search measurement](./search-measurement.md) and submission document drafts are available. Native verification and final human deliverables still need completion; do not restart Step 5 from scratch.
+
 Based on [build-order.md](./build-order.md). Steps 1–4 are complete: catalog fetch, FlatList, persistence, loading/error/retry, and connection handling.
 
 **এখন:** ছোট ছোট পরিবর্তন করব, নিজে বুঝব, দুই platform-এ দেখব, তারপর commit করব। নিচের সিদ্ধান্তগুলো প্রস্তাবিত; বাস্তব ফল দেখে প্রয়োজন হলে বদলাব।
@@ -9,10 +11,10 @@ Based on [build-order.md](./build-order.md). Steps 1–4 are complete: catalog f
 | Part | Decision / সিদ্ধান্ত |
 | --- | --- |
 | Server data | Existing TanStack Query + persistence owns the complete catalog। product data আবার React state-এ copy করব না। |
-| Screen state | `useState` for search text and stock toggle। Redux/Zustand লাগবে না। |
+| Screen state | `useState` for search text, stock toggle, and applied price range; draft price inputs stay in the filter component। Redux/Zustand লাগবে না। |
 | Visible products | Derive from catalog + search + filter। আলাদা results state রাখব না। |
 | Rendering | Keep FlatList and stable product-ID keys। search বদলালে catalog query key বদলাব না। |
-| Scope | Search, one stock filter, details, recovery, evidence। cart/login/AI search এই কাজের অংশ নয়। |
+| Scope | Search, stock + price filters, details, recovery, evidence। cart/login/AI search এই কাজের অংশ নয়। |
 
 Create files only when their step starts. App code stays inside `ShopDiscover/`; Markdown stays in the root `docs/` folder.
 
@@ -32,22 +34,24 @@ Create files only when their step starts. App code stays inside `ShopDiscover/`;
 | `phone`, `phones`, `smartphone`, `smartphones` | Exact aliases → only category `smartphones`। পুরো phrase-এর জন্য নিয়ম। |
 | `phone charger`, `phone chargers` | Only `mobile-accessories` whose title contains the whole word `charger`/`chargers`। ফোন বা `Charger SXT RWD` গাড়ি দেখাব না। |
 | `red dress` | Require both words; return empty if the data cannot establish a match। রং বাদ দিয়ে অন্য dress দেখাব না। |
-| `cheap phone` | No automatic price interpretation in this scope। “cheap” মানে কত দাম, নিজের মতো ধরে নেব না; এটি documented limitation। |
+| `cheap phone` | No automatic price interpretation; search `phone` and choose a maximum price explicitly। “cheap” মানে কত দাম, user নিজে price filter-এ ঠিক করবে। |
 
 **Why / কেন:** exact aliases improve the selected phone intent; whole-word rules avoid matching `phone` inside `headphones`. Accessory intent remains separate. These are limited rules, not general language understanding.
 
 **Done when:** aliases return the same phone IDs; chargers remain accessories; no invented red-dress match; Clear restores browsing. Check typing and keyboard behavior on both platforms, including saved-catalog search offline.
 
-## Step 6 — In stock filter + reset
+## Step 6 — In stock + Price range + reset
 
 1. Add `inStockOnly`, initially `false`, to `ProductsScreen.tsx`; use a labelled Switch.
-2. First search the **complete cached catalog**; then apply `product.stock > 0` when the switch is on. Do not filter only the first visible rows or slice before filtering.
-3. Derive FlatList data and result count from the final array. Empty with the toggle on says “No in-stock matches”; allow turning the toggle off.
-4. Define controls clearly: **Clear** removes only search text; **Reset all** clears text and turns the stock filter off. A search/filter/reset change scrolls to the top; returning from details does not.
+2. Add optional minimum/maximum price inputs and **Apply price range**. Blank means no bound; zero is valid. Accept finite nonnegative decimal prices and require minimum ≤ maximum. Both bounds are inclusive; do not invent currency conversion.
+3. Keep draft price text separate from the applied range. Invalid input shows an inline error and leaves the old range/results unchanged; show the active range explicitly. Provide **Clear price range**.
+4. First search the **complete cached catalog**; then combine `stock > 0` and the applied price bounds. Do not filter only visible rows or slice before filtering. Put these pure rules in `filterProducts.ts` and price/stock controls in `ProductFilters.tsx`.
+5. Derive FlatList data/count from the final array. Distinguish an empty catalog from “No matching products” and “No products match these filters”; keep controls available.
+6. **Clear search** changes only search; **Clear price range** removes price bounds; **Reset all** clears search, stock, price drafts/range, and validation errors. Search/stock/applied-price/reset changes scroll to the top; details/back does not. A collapsible Filters section leaves more space for the list.
 
 **বাংলা:** সব relevant পণ্যের ওপর stock filter করব। label মানে stock আছে; আজ delivery বা order নিশ্চিত নয়।
 
-**Done when:** zero-stock products disappear and return when switched off; search and stock combine correctly; Reset all restores browsing. Saved stock is still labelled with the existing update/offline information.
+**Done when:** stock and inclusive price boundaries work independently/together with search; blank/one-sided ranges work; negative/non-numeric/reversed bounds show an error; Reset all restores browsing. Saved stock/price still use the existing update/offline information.
 
 ## Step 7 — details and return to the same list
 
@@ -72,7 +76,7 @@ Create files only when their step starts. App code stays inside `ShopDiscover/`;
 
 **বাংলা:** details-এ ID পাঠাব, cache থেকে পণ্য দেখাব। back করলে আগের screen-এই ফিরব—নতুন list খুলব না।
 
-**Done when:** search → stock filter → scroll → details → back keeps text, toggle, results, and position. Check Android hardware back, iOS header back/swipe, and offline details.
+**Done when:** search → stock/price filters → scroll → details → back keeps text, toggle, price drafts/applied range, results, and position. Check Android hardware back, iOS header back/swipe, and offline details.
 
 ## Step 8 — demonstrate failures and recovery
 
@@ -101,7 +105,7 @@ Keep the existing passing tests. Add missing feature coverage alongside implemen
 | Case | Bug it catches / কেন দরকার |
 | --- | --- |
 | Search aliases and charger intent | Alias handling must not turn an accessory request into phones or a car। |
-| Complete-catalog stock filtering | Put an available match after the first five fixture records; it must still appear। এটি local-search design-এর সবচেয়ে সম্ভাব্য ভুল। |
+| Complete-catalog stock/price filtering | An available match after the first five records must appear; test inclusive bounds, zero/blank/invalid ranges and reset। incomplete filtering এই design-এর সম্ভাব্য ভুল। |
 | Details → back continuity | Search/filter and the mounted list remain intact; native checks prove actual scroll position। |
 | Failure/offline recovery | Reuse existing API/cache/screen tests; extend only for a new gap। |
 
@@ -140,4 +144,4 @@ yarn test --runInBand --watch=false --watchman=false
 
 Run the changed flow on both native platforms, then commit the actual working change with a simple message. Record measurement results only after running the comparison.
 
-**Start now:** Step 5. First write and understand the pure search function; then connect the TextInput. Navigation comes after search and stock filtering work.
+**Continue now:** see [session-status.md](./session-status.md). Search/filter/navigation, automated checks, release builds and the main native flow on both platforms are verified. Finish the iOS offline cold-restart check, personal reflection, recording and submission review.

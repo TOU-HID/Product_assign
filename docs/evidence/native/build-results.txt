@@ -1,0 +1,6 @@
+Android ARM64 release
+BUILD SUCCESSFUL in 2m 59s
+244 actionable tasks: 88 executed, 156 up-to-date
+
+iOS ARM64 simulator release
+** BUILD SUCCEEDED **

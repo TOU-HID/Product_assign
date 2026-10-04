@@ -1,0 +1,77 @@
+{
+  "measuredAt": "2026-10-04T01:45:16.564Z",
+  "query": "phone",
+  "relevanceRule": "category === smartphones",
+  "stockFilter": false,
+  "priceRange": {},
+  "baseline": {
+    "url": "https://dummyjson.com/products/search?q=phone&limit=5",
+    "capturedAt": "2026-10-04T01:42:48.060Z",
+    "responseBytes": 8281,
+    "total": 23,
+    "firstFive": [
+      {
+        "id": 101,
+        "title": "Apple AirPods Max Silver",
+        "category": "mobile-accessories"
+      },
+      {
+        "id": 104,
+        "title": "Apple iPhone Charger",
+        "category": "mobile-accessories"
+      },
+      {
+        "id": 105,
+        "title": "Apple MagSafe Battery Pack",
+        "category": "mobile-accessories"
+      },
+      {
+        "id": 107,
+        "title": "Beats Flex Wireless Earphones",
+        "category": "mobile-accessories"
+      },
+      {
+        "id": 108,
+        "title": "iPhone 12 Silicone Case with MagSafe Plum",
+        "category": "mobile-accessories"
+      }
+    ],
+    "relevantCount": 0
+  },
+  "local": {
+    "url": "https://dummyjson.com/products?limit=0&select=title,description,category,price,stock,tags,thumbnail,brand",
+    "capturedAt": "2026-10-04T01:43:27.368Z",
+    "responseBytes": 79235,
+    "catalogTotal": 194,
+    "resultTotal": 16,
+    "firstFive": [
+      {
+        "id": 121,
+        "title": "iPhone 5s",
+        "category": "smartphones"
+      },
+      {
+        "id": 122,
+        "title": "iPhone 6",
+        "category": "smartphones"
+      },
+      {
+        "id": 123,
+        "title": "iPhone 13 Pro",
+        "category": "smartphones"
+      },
+      {
+        "id": 124,
+        "title": "iPhone X",
+        "category": "smartphones"
+      },
+      {
+        "id": 125,
+        "title": "Oppo A57",
+        "category": "smartphones"
+      }
+    ],
+    "relevantCount": 5
+  },
+  "mismatchedBaselineIds": []
+}

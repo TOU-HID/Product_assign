@@ -1,0 +1,17 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "47D84A87-2DE3-4A1B-B6F4-83507C32CC85",
+        "deviceName" : "iPhone 17 Pro",
+        "exportedFileName" : "ECF6D288-F8E6-47EA-A9A6-81140A2DFA8C.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "ios-swipe-back-preserved_0_1FB0B616-5263-46FD-AD2C-38EDD000B7BF.png",
+        "timestamp" : 1791080256.138
+      }
+    ],
+    "testIdentifier" : "NativeFlowTests/testSwipeBackPreservesBrowsingPosition()",
+    "testIdentifierURL" : "test://com.apple.xcode/NativeChecks/NativeChecks/NativeFlowTests/testSwipeBackPreservesBrowsingPosition"
+  }
+]

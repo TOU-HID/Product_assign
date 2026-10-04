@@ -1,0 +1,11 @@
+android-online
+android-phone-search
+android-filtered-scrolled
+android-details
+android-back-preserved
+android-reset
+android-offline-restart
+android-offline-details
+android-offline-back
+android-reconnected
+PASS: search, filters, details, exact scroll bounds, reset, offline restart/details and reconnect

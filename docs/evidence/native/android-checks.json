@@ -1,0 +1,42 @@
+[
+  {
+    "step": "android-online",
+    "capturedAt": "2026-10-04T02:07:16Z"
+  },
+  {
+    "step": "android-phone-search",
+    "capturedAt": "2026-10-04T02:07:30Z"
+  },
+  {
+    "step": "android-filtered-scrolled",
+    "capturedAt": "2026-10-04T02:08:01Z"
+  },
+  {
+    "step": "android-details",
+    "capturedAt": "2026-10-04T02:08:09Z"
+  },
+  {
+    "step": "android-back-preserved",
+    "capturedAt": "2026-10-04T02:08:18Z"
+  },
+  {
+    "step": "android-reset",
+    "capturedAt": "2026-10-04T02:08:34Z"
+  },
+  {
+    "step": "android-offline-restart",
+    "capturedAt": "2026-10-04T02:08:56Z"
+  },
+  {
+    "step": "android-offline-details",
+    "capturedAt": "2026-10-04T02:09:16Z"
+  },
+  {
+    "step": "android-offline-back",
+    "capturedAt": "2026-10-04T02:09:22Z"
+  },
+  {
+    "step": "android-reconnected",
+    "capturedAt": "2026-10-04T02:09:34Z"
+  }
+]
